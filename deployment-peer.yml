@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  peer:
+    image: edgefl-peer
+    ports:
+      - '6001:80'
+    deploy:
+      mode: replicated
+      replicas: 5
+    networks:
+      - p2p_network
+
+networks:
+  p2p_network:
+    driver: overlay
+    external: true

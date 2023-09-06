@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  tracker:
+    image: edgefl-registration
+    hostname: registration
+    ports:
+      - '5001:5001'
+    networks:
+      - p2p_network
+
+networks:
+  p2p_network:
+    driver: overlay
+    external: true

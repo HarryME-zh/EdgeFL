@@ -4,7 +4,7 @@ services:
     image: edgefl-registration
     hostname: registration
     ports:
-      - '5001:5001'
+      - '5051:5051'
     networks:
       - p2p_network
 

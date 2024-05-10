@@ -1,6 +1,6 @@
-flask
+flask==2.0.2
 torch==1.6.0
 torchvision==0.7.0
 gevent
 requests
-scikit-learn
+scikit-learn==0.24.1

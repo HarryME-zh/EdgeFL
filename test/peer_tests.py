@@ -16,7 +16,7 @@ class TestPeer(unittest.TestCase):
 
     # Test case for register_with_registration method
     def test_register_with_registration(self):
-        # Create a mock response for the requests.post call
+        # Create a mock response for the requests.post
         with patch('requests.post') as mock_post:
             mock_post.return_value.json.return_value = {'peers': ['peer1', 'peer2']}
             self.peer.register_with_registration()
@@ -26,7 +26,7 @@ class TestPeer(unittest.TestCase):
 
     # Test case for aggregation_func method
     def test_aggregation_func(self):
-        # Create a mock response for the requests.get call
+        # Create a mock response for the requests.get
         with patch('requests.get') as mock_get:
             mock_get.return_value.json.return_value = {'peers': [{'hostname': 'peer1'}, {'hostname': 'peer2'}]}
 
